@@ -1,0 +1,8 @@
+name: aquamis
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - git=2.38.1
+  - patch=2.7.6
