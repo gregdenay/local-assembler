@@ -8,7 +8,6 @@ rule create_sample_sheet:
     params:
         fastq_folder=config["fastq_folder"],
         fastq_naming=config["fastq_naming"],
-        aquamis_path=config["aquamis_path"],
     conda:
         "../envs/aquamis.yaml"
     log:
@@ -16,8 +15,7 @@ rule create_sample_sheet:
     shell:
         """
         exec 2> {log}
-        echo 
-        bash {params.aquamis_path}/scripts/create_sampleSheet.sh \
+        create_sampleSheet.sh \
             --mode {params.fastq_naming} \
             --fastxDir $(realpath {params.fastq_folder}) \
             --outDir {output.outdir} \
@@ -33,7 +31,6 @@ checkpoint aquamis:
         summary="aquamis/reports/summary_report.tsv",
         assdir=directory("aquamis/Assembly/assembly"),
     params:
-        aquamis_path=config["aquamis_path"],
         max_threads_sample=config["max_threads_sample"],
         qc_schema=f"{workflow.basedir}/schema/AQUAMIS_thresholds.json",
     conda:
@@ -43,8 +40,7 @@ checkpoint aquamis:
         "logs/run_aquamis.log",
     shell:
         """
-        python {params.aquamis_path}/aquamis.py \
-            --sample_list {input.sample_sheet} \
+        aquamis --sample_list {input.sample_sheet} \
             --working_directory {output.outdir} \
             --threads {threads} \
             --threads_sample {params.max_threads_sample} \
