@@ -4,5 +4,4 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - git=2.38.1
-  - patch=2.7.6
+  - aquamis=1.4.0
