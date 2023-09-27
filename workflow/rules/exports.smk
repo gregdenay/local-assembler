@@ -6,7 +6,7 @@ rule geuebt_assemblies:
     input:
         ass="aquamis/Assembly/assembly/{sample_id}.fasta",
     output:
-       ass="geuebt_export/{sample_id}.fasta",
+        ass="geuebt_export/{sample_id}.fasta",
     conda:
         "../envs/pandas.yaml"
     log:

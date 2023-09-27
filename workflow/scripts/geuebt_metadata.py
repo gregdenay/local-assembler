@@ -61,7 +61,7 @@ def main(assemblies, summary, metadata_in, metadata_out):
             orient="index",
             columns=[
                 "fasta_name",
-                "fasta_md5", 
+                "fasta_md5",
                 "sequencing_depth",
                 "ref_coverage",
                 "q30"

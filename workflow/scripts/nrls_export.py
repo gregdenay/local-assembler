@@ -65,7 +65,7 @@ def main(metadata, ssheet, outdir):
                     row[0],  # "SequenzID_Einsender",
                     "fastq",  # "Art_Sequenzdaten",
                     row[1]["sequencing_instrument"],  # "Sequenziergerät",
-                    "<FILL IN CREDENTIALS>", # "EinsenderID",
+                    "<FILL IN CREDENTIALS>",  # "EinsenderID",
                     "<FILL IN CREDENTIALS>",  # "Einsender_Institution",
                     "<FILL IN CREDENTIALS>",  # "Einsender_Email_Ansprechperson",
                     datetime.date.today(),  # "Datum_SequenzUpload",
@@ -134,7 +134,7 @@ def main(metadata, ssheet, outdir):
         # concatenate df
         metaext = pd.concat(metanrl)
         # output both tables
-        with open(f"md5_{species}.txt", "w") as fo:
+        with open(os.path.join(outdir, species, f"md5_{species}.txt"), "w") as fo:
             fo.write("\n".join(checksums))
         metaext.to_csv(
             os.path.join(outdir, species, f"metadata_{species}.tsv"),
