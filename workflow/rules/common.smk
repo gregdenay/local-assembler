@@ -35,6 +35,6 @@ try:
     validate_input_param(config["metadata"], schema="../schema/metadata.schema.json")
 except FileNotFoundError:
     validate_input_param(
-        os.path.join(config["workdir"], config["metadata"]),
+        os.path.join(workflow.basedir, ".tests", "integration", config["metadata"]),
         schema="../schema/metadata.schema.json"
     )
