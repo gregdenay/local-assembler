@@ -11,15 +11,15 @@
     "all Species": {
       "busco_duplicates": [
         {
-          "source": "BfR-4NSZ 2023-09-12",
-          "interval": [0.00671140939597315],
+          "source": "BfR_default",
+          "interval": [0.05],
           "binscore": [0, 1],
           "bincolor": ["#81B294", "#F2CC8F"]
         }
       ],
       "busco_single": [
         {
-          "source": "BfR-4NSZ 2023-09-12",
+          "source": "BfR_default",
           "interval": [0.95],
           "binscore": [1, 0],
           "bincolor": ["#F2CC8F", "#81B294"]
@@ -27,15 +27,15 @@
       ],
       "ContamStatus": [
         {
-          "source": "BfR-4NSZ 2023-09-12",
-          "interval": [1],
-          "binscore": [0, 1],
-          "bincolor": ["#81B294", "#F2CC8F"]
+          "source": "BfR_default",
+          "interval": [1, 2],
+          "binscore": [0, 1, 2],
+          "bincolor": ["#81B294", "#E07A5F", "#E07A5F"]
         }
       ],
       "contig_hit1_genus_fraction": [
         {
-          "source": "BfR-4NSZ 2023-09-12",
+          "source": "BfR_default",
           "interval": [0.95],
           "binscore": [2, 0],
           "bincolor": ["#E07A5F", "#81B294"]
@@ -43,7 +43,7 @@
       ],
       "contig_hit1_species_fraction": [
         {
-          "source": "BfR-4NSZ 2023-09-12",
+          "source": "BfR_default",
           "interval": [0.95],
           "binscore": [2, 0],
           "bincolor": ["#E07A5F", "#81B294"]
@@ -51,7 +51,7 @@
       ],
       "mlst_multi_allele_loci": [
         {
-          "source": "BfR-4NSZ 2023-09-12",
+          "source": "BfR_default",
           "interval": [1],
           "binscore": [0, 2],
           "bincolor": ["#81B294", "#E07A5F"]
@@ -59,7 +59,7 @@
       ],
       "NumContamSNVs": [
         {
-          "source": "BfR-4NSZ 2023-09-12",
+          "source": "BfR_default",
           "interval": [2, 3],
           "binscore": [0, 1, 2],
           "bincolor": ["#81B294", "#F2CC8F", "#E07A5F"]
@@ -67,7 +67,7 @@
       ],
       "q30_rate_after": [
         {
-          "source": "BfR-4NSZ 2023-09-12",
+          "source": "BfR_default",
           "interval": [0.7, 0.8],
           "binscore": [2, 1, 0],
           "bincolor": ["#E07A5F", "#F2CC8F", "#81B294"]
@@ -75,7 +75,7 @@
       ],
       "qc_FAIL": [
         {
-          "source": "BfR-4NSZ 2023-09-12",
+          "source": "BfR_default",
           "interval": [0.5],
           "binscore": [0, 2],
           "bincolor": ["#81B294", "#E07A5F"]
@@ -83,7 +83,7 @@
       ],
       "qc_NA": [
         {
-          "source": "BfR-4NSZ 2023-09-12",
+          "source": "BfR_default",
           "interval": [0.5],
           "binscore": [0, 2],
           "bincolor": ["#81B294", "#F2CC8F"]
@@ -91,7 +91,7 @@
       ],
       "qc_VOTE": [
         {
-          "source": "BfR-4NSZ 2023-09-12",
+          "source": "BfR_default",
           "interval": [1],
           "binscore": [0, 2],
           "bincolor": ["#81B294", "#E07A5F"]
@@ -99,7 +99,7 @@
       ],
       "qc_WARNING": [
         {
-          "source": "BfR-4NSZ 2023-09-12",
+          "source": "BfR_default",
           "interval": [0.5],
           "binscore": [0, 2],
           "bincolor": ["#81B294", "#F2CC8F"]
@@ -107,7 +107,7 @@
       ],
       "read_hit1_genus_fraction": [
         {
-          "source": "BfR-4NSZ 2023-09-12",
+          "source": "BfR_default",
           "interval": [0.95],
           "binscore": [2, 0],
           "bincolor": ["#E07A5F", "#81B294"]
@@ -115,7 +115,7 @@
       ],
       "read_hit1_species_fraction": [
         {
-          "source": "BfR-4NSZ 2023-09-12",
+          "source": "BfR_default",
           "interval": [0.95],
           "binscore": [2, 0],
           "bincolor": ["#E07A5F", "#81B294"]
@@ -141,8 +141,8 @@
       ],
       "busco_single": [
         {
-          "source": "BfR-4NSZ 2023-09-12",
-          "interval": [0.79],
+          "source": "Curated_Genus_specific_BfR",
+          "interval": [0.7999],
           "binscore": [1, 0],
           "bincolor": ["#F2CC8F", "#81B294"]
         }
@@ -157,7 +157,7 @@
       ],
       "NumContamSNVs": [
         {
-          "source": "BfR-4NSZ 2023-09-12",
+          "source": "Curated_Genus_specific_BfR",
           "interval": [1, 2],
           "binscore": [0, 1, 2],
           "bincolor": ["#81B294", "#F2CC8F", "#E07A5F"]
@@ -184,7 +184,7 @@
       ],
       "NumContamSNVs": [
         {
-          "source": "BfR-4NSZ 2023-09-12",
+          "source": "Curated_Genus_specific_BfR",
           "interval": [3, 4],
           "binscore": [0, 1, 2],
           "bincolor": ["#81B294", "#F2CC8F", "#E07A5F"]
@@ -229,7 +229,7 @@
     "Listeria": {
       "NumContamSNVs": [
         {
-          "source": "BfR-4NSZ 2023-09-12",
+          "source": "Curated_Genus_specific_BfR",
           "interval": [2, 3],
           "binscore": [0, 1, 2],
           "bincolor": ["#81B294", "#F2CC8F", "#E07A5F"]
@@ -274,7 +274,7 @@
     "Salmonella": {
       "NumContamSNVs": [
         {
-          "source": "BfR-4NSZ 2023-09-12",
+          "source": "Curated_Genus_specific_BfR",
           "interval": [6, 7],
           "binscore": [0, 1, 2],
           "bincolor": ["#81B294", "#F2CC8F", "#E07A5F"]
