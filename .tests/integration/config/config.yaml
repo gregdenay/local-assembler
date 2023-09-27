@@ -8,8 +8,6 @@ fastq_folder: data
 # path to metadata file
 metadata: data/metadata.tsv
 
-aquamis_path: "~/.nrw-geuebt/aquamis"
-
 # max threads per parallel job
 max_threads_sample: 1
 

@@ -131,7 +131,6 @@ def main(metadata, ssheet, outdir):
                     "Probe_Bemerkung",
                 ]
             ))
-        print(metanrl)
         # concatenate df
         metaext = pd.concat(metanrl)
         # output both tables
