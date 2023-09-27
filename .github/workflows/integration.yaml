@@ -7,7 +7,6 @@ on:
     branches: [master, main]
   workflow_dispatch:
 
-
 jobs:
   Unit_testing:
     runs-on: ubuntu-latest
@@ -44,7 +43,7 @@ jobs:
         channels: conda-forge,bioconda
         activate-environment: snkmk
     
-        - name: Integration testing
+    - name: Integration testing
       run: |
         mamba install 'snakemake>=6.3.0' -n snkmk
         mamba env export
