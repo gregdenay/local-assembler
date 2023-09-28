@@ -2,10 +2,10 @@
 
 ## Changing quality thresholds
 
-To change quality thresholds, modify the JSON file located in 
+To change quality thresholds, modify the JSON file located in
 `workflow/schema/AQUAMIS_threesholds.json`.
 
-The file provided in local-assembler is a scaled-down, modified version of the 
+The file provided in local-assembler is a scaled-down, modified version of the
 [AQUAMIS definition](https://gitlab.com/bfr_bioinformatics/AQUAMIS/-/blob/master/resources/AQUAMIS_thresholds.json?ref_type=heads).
 
 The modifications are:
