@@ -18,5 +18,5 @@ metadata: data/metadata.tsv
 # max threads per parallel job
 max_threads_sample: 1
 
-# fastq naming scheme for BfR create_sample_sheet script ('illumina', 'ncbi', 'dot', 'flex')
+# fastq naming scheme for BfR create_sample_sheet script ('illumina', 'ncbi', flex')
 fastq_naming: illumina

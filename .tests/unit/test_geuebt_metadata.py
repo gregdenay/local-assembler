@@ -21,7 +21,7 @@ def test_geuebt_metadata():
         # Copy data to the temporary workdir.
         shutil.copytree(data_path, workdir)
         shutil.copy(script_path, workdir)
-        
+
         # run function
         sys.path.insert(0, workdir)
         from geuebt_metadata import main  # import main from your script
