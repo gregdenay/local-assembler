@@ -31,7 +31,7 @@ rule consolidate_ids:
     output:
         sample_sheet="sample_sheet/samples_isolate_ids.tsv",
     conda:
-        "../envs/pandas.yaml",
+        "../envs/pandas.yaml"
     log:
         "logs/consolidate_ids.log",
     script:
