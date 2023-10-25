@@ -19,23 +19,6 @@ rule geuebt_export:
         "../scripts/geuebt_export.py"
 
 
-# rule geuebt_assemblies:
-    # using geuebt table here becaus it's already qc checked
-    # input:
-        # metadata="geuebt_export/metadata.tsv",
-    # output:
-        # flag=touch("geuebt_export/sucess.flag"),
-    # conda:
-        # "../envs/pandas.yaml"
-    # log:
-        # "logs/geuebt_assemblies_{sample_id}.log",
-    # shell:
-        # """
-        # exec 2> {log}
-        # cp {input.ass} {output.ass}
-        # """
-
-
 rule nrls_export:
     input:
         # using geuebt table here becaus it's already qc checked
