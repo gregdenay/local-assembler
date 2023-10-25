@@ -10,7 +10,7 @@ rule geuebt_export:
     params:
         metadata=config["metadata"],
         assembly_path="aquamis/Assembly/assembly/",
-        fasta_destination="geuebt_export",
+        fasta_destination=lambda w, output: os.path.split(output["metatbl"])[0],
     conda:
         "../envs/pandas.yaml"
     log:
