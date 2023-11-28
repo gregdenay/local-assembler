@@ -54,7 +54,6 @@ def main(metadata, ssheet, outdir):
         # for each sample:
         for row in tbl.iterrows():  # yields (index, Series)
             for fastqpath in zip([row[1]["fq1"], row[1]["fq2"]], ["R1", "R2"]):
-                filename = os.path.basename(fastqpath[0])
                 # rename files with isolate_id
                 renamed = os.path.join(outdir, species, f"{row[0]}_{fastqpath[1]}.fastq.gz")
                 # copy fastq
